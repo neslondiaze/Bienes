@@ -1,8 +1,11 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+<div id="nav">
+  <router-link to="/">Lista de usuario</router-link>
+  <router-link to="/creato-usuario">Crear usuario</router-link>
+  <router-link to="/edit-usuario">Editar usuario</router-link>
+
+
+</div>
   <router-view/>
 </template>
 
@@ -15,16 +18,17 @@
   color: #2c3e50;
 }
 
-nav {
+#nav {
   padding: 30px;
+
 }
 
-nav a {
+#nav a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+#nav a.router-link-exact-artive {
+  corlor: #42b98r3;
 }
 </style>
