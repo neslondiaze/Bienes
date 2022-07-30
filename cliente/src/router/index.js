@@ -1,22 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import UsuarioIndex from "../components/usuario/UsuarioIndex.vue";
-
-
+import Home from "../components/Home.vue";
+import adminRouter from "../app/admin/router";
 
 
 const routes = [
   {
     path: '/',
-    component: UsuarioIndex
+    component: Home
   },
   {
-    path: '/creato-usuario',
-    component: () => import(/* webpackChunkName: "create-usuario" */ '../components/usuario/UsuarioCreate.vue')
+    path: '/admin',
+    ...adminRouter
   },
-  {
-    path: '/edit-usuario',
-    component: () => import(/* webpackChunkName: "edit-usuario" */ '../components/usuario/UsuarioEdit.vue')
-  }
 ]
 
 const router = createRouter({

@@ -3,7 +3,7 @@ const UsuarioController = require('../controllers/UsuarioController')
 const routes = express.Router()
 
 routes.get('/', (req, res) => {
-  res.send('ueueeueu')
+  res.send('Hola mundo')
 })
 
 /* USUARIOS */

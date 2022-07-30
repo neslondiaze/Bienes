@@ -25,7 +25,7 @@ app.use(require('./routes/index'))*/
 app.use(express.static(path.join(__dirname, 'public')));
 
 /* EJECUTA EL SERVIDOR */
-const puerto = process.env.PUERTO || 5000;
+const puerto = process.env.PUERTO || 3500;
 
 app.listen(puerto, () => {
   console.log(`Servidor ejecutandose en puerto: ${puerto}`);

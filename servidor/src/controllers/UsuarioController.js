@@ -17,7 +17,7 @@ UsuarioController.show = async (req, res) => {
 UsuarioController.store = async (req, res) => {
   const data = req.body.usuario
   await Usuario.create(data)
-  res.json({ msg: 'Usuario agregado' })
+  res.json({ msg: 'Usuario agregado exitosamente' })
 }
 
 UsuarioController.update = async (req, res) => {
